@@ -1,0 +1,3 @@
+1. What complier does? How it works with Java? What is different in Java?
+
+=>  Complier converts the human written code to machine readable format basically in form of 0 & 1s. But, in Java it works different. It coverts entire ".java" file to ".class" file which contains byte code file. Byte code is that code which can't be run directly on system thats why we need a "JVM" Java Virtual Machine which itself is a Interpreter which read ".class" file line by line. This interpreted code is the machine code means in form of 0&1's. If we compared to other languages like with C++, in C++ compiler compiles code directly into machine code the byte code & interpreter part, donot contain c++.   
