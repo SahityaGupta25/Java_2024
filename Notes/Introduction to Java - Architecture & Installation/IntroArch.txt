@@ -1,3 +1,19 @@
 1. What complier does? How it works with Java? What is different in Java?
 
-=>  Complier converts the human written code to machine readable format basically in form of 0 & 1s. But, in Java it works different. It coverts entire ".java" file to ".class" file which contains byte code file. Byte code is that code which can't be run directly on system thats why we need a "JVM" Java Virtual Machine which itself is a Interpreter which read ".class" file line by line. This interpreted code is the machine code means in form of 0&1's. If we compared to other languages like with C++, in C++ compiler compiles code directly into machine code the byte code & interpreter part, donot contain c++.   
+=>  Complier converts the human written code to machine readable format basically in form of 0 & 1s. But, in Java it works different. It coverts entire ".java" file to ".class" file which contains byte code file. Byte code is that code which can't be run directly on system thats why we need a "JVM" Java Virtual Machine which itself is a Interpreter which read ".class" file line by line. This interpreted code is the machine code means in form of 0&1's. If we compared to other languages like with C++, in C++ compiler compiles code directly into machine code the byte code & interpreter part, donot contained by c++ & java is platform independent.   
+
+What is platform independent?
+
+=>  The code compiled is known as "Byte Code". That Byte code can run on any operating system that is why it is platform independent. In other programming languages,  like in c or c++, if the code is complied, it generates an ".exe" file which is an executable file, in this case, the file is platform dependent. 
+
+3. What is JDK?
+
+=>  JDK is known as "Java Development Kit". "Java Development kit" consist of "Java Runtime Environment(JRE)" plus some of the development tools.
+
+4. What is JRE?
+
+=>  JRE comes in JDK. JRE consist of Java Virtual machine and library classes. "Java Virtual Machine" consist of "Just-in-time-compiler".
+
+5. What is just-in-time-compiler?
+
+=>  
