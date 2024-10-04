@@ -8,11 +8,27 @@ What is platform independent?
 
 3. What is JDK?
 
-=>  JDK is known as "Java Development Kit". "Java Development kit" consist of "Java Runtime Environment(JRE)" plus some of the development tools.
+=>  JDK is a set of files which we can download from the internet and provide an environment where we can develop and run java program.JDK is known as "Java Development Kit". "Java Development kit" consist of "Java Runtime Environment(JRE)" plus some of the development tools.
+Here are the things JDK consists:-
+a.  development tools.
+b.  JRE - to execute the program.
+c.  A compiler - "javac".
+d.  archiver - "jar".
+e.  docs generator - "javadoc".
+f.  interpreter & loader.
 
 4. What is JRE?
 
-=>  JRE comes in JDK. JRE consist of Java Virtual machine and library classes. "Java Virtual Machine" consist of "Just-in-time-compiler".
+=>  JRE comes in JDK. JRE consist of Java Virtual machine and library classes. "Java Virtual Machine" consist of "Just-in-time-compiler". In JRE you can only run a java program, you cannot create a program. 
+JRE consists of things mention below:-
+a. Deployment technologies
+b. User interface toolkits
+3. Integration libraries
+4. Base libraries
+5. JVM
+After we get the ".class" file, the next things happen at runtime:
+i. Class loader loads all classes needed to execute the program.
+ii. JVM sends code to Byte code verifier to check the format of code.
 
 5. What is just-in-time-compiler?
 
