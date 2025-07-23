@@ -1,4 +1,4 @@
-// Difference between next & nextLine in Java
+// HOw to calclate percentage in Java
 import java.util.Scanner;
 
 public class Main{
