@@ -9,6 +9,19 @@ class Main {
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();
         System.out.println("Good Morning! " + str);
+
+// 4. Kilometers to miles
+        import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter the number in Kilometer");
+    double a = scan.nextDouble();
+    double mile = 1.609344;
+    double distanceinmiles = a/mile;
+    System.out.println("The distance in miles = " + distanceinmiles);
+
         
     }
 }
