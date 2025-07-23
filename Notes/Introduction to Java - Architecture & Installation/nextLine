@@ -1,0 +1,23 @@
+// Difference between next & nextLine in Java
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        Scanner ac = new Scanner(System.in);
+
+        System.out.println("Enter two words or more, by giving space in between them!");
+        String str1 = sc.next();
+        System.out.println(str1);
+        System.out.println("Again Enter two or more words by giving space in between them!");
+        String str2 = ac.nextLine();
+        System.out.println(str2);
+
+
+        
+     
+        
+    
+    }
+    
+}
