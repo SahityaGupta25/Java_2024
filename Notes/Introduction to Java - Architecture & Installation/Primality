@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		 Scanner s = new Scanner(System.in);
+		 System.out.println("Enter a number to check whether it's prime or not");
+        int a = s.nextInt();
+        int div = 2;
+        boolean isPrime = true;
+        while(div<=a/2){
+            if(a % div ==0){
+                isPrime = false;
+            }
+            div += 1;
+            
+        }
+        if(isPrime = true){
+                System.out.println("Prime");
+            }
+            else{
+                System.out.println("Composite");
+            }
+  
+	}
+}
