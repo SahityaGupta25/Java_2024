@@ -50,6 +50,13 @@ public class Main {
 
 
 
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
 import java.util.Scanner;
 public class Main
 {
@@ -58,22 +65,29 @@ public class Main
 		Scanner s = new Scanner(System.in);
 		int basic = s.nextInt();
 		System.out.println("Also Enter your grade");
-		String grade = s.next().charAt(0);
-		double da = (50/100) * salary;
-		double hra = (20/100) * salary;
-		double pf = (11/100) * salary;
-        double allowancea =1700;
-        double allowanceb = 1500;
-        double allowancec = 1300;
+		char grade = s.next().charAt(0);
+		double da = 0.50 * basic;
+		double hra = 0.20 * basic;
+		double pf = 0.11 * basic;
+        double totalSalary;
         
-        if(grade == 'A' || 'a'){
-            double totalSalary = hra +Da + totalSalary + allowancea - pf;
+        if(grade == 'A' || grade == 'a'){
+            totalSalary = hra + da + basic+ 1700 - pf;
         }
-         else if(grade == 'B' || 'b'){
-            double totalSalary = hra +Da + totalSalary + allowanceb - pf;
+         else if(grade == 'B' || grade == 'b'){
+            totalSalary = hra + da + basic+ 1500  - pf;
         }
         else{
-            double totalSalary = hra +Da + totalSalary + allowancec - pf;
+            totalSalary = hra + da + basic+  1500 - pf;
         }
-        finalSalary = (int)Math.round(totalSalary);
+        int finalSalary = (int)Math.round(totalSalary);
         System.out.println(finalSalary);
+		
+		
+		
+		
+		
+		
+		
+	}
+}
