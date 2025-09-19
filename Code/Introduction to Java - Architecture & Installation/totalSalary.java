@@ -78,7 +78,7 @@ public class Main
             totalSalary = hra + da + basic+ 1500  - pf;
         }
         else{
-            totalSalary = hra + da + basic+  1500 - pf;
+            totalSalary = hra + da + basic+  1300 - pf;
         }
         int finalSalary = (int)Math.round(totalSalary);
         System.out.println(finalSalary);
