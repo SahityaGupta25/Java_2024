@@ -33,3 +33,32 @@ public class Solution{
 }
 
 */
+import java.util.Scanner;
+
+public class Solution {
+
+    public static int duplicateNumber(int arr[]) {
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (arr[i] == arr[j]) {
+                    return arr[i];
+                }
+            }
+        }
+        return -1; // fallback, though problem guarantees a duplicate
+    }
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int t = s.nextInt();
+        for (int i = 0; i < t; i++) {
+            int n = s.nextInt();
+            int[] arr = new int[n];
+            for (int j = 0; j < n; j++) {
+                arr[j] = s.nextInt();
+            }
+            System.out.println(duplicateNumber(arr));
+        }
+    }
+}
