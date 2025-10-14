@@ -44,3 +44,50 @@ For the second query, we have 5 triplets in total that sum up to 10. They are, (
 
 
 */
+
+import java.util.Scanner;
+public class Solution {
+    
+    public static int findTriplet(int[] arr, int x) {
+    	//Your code goes here
+          int count=0;
+        for(int i=0; i<arr.length-2; i++){
+             for(int j=i+1; j<arr.length-1;j++){
+                 for(int k=j+1; k<arr.length; k++)
+                     if(arr[i]+arr[j]+arr[k]==x){
+                         count++;
+                     }
+         }
+    }
+    if(count>=1){
+        return count;
+    }
+    else{
+        return 0;
+    }
+    
+
+}
+
+
+
+
+   public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int t = s.nextInt();
+        
+        for (int i = 0; i < t; i++) {
+            int n = s.nextInt();
+            int[] arr = new int[n];
+            for (int j = 0; j < n; j++) {
+                arr[j] = s.nextInt();
+            }
+            int x = s.nextInt();
+
+            System.out.println(findTriplet(arr,x));
+        }
+    }
+
+}
+
+
