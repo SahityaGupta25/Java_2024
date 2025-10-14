@@ -39,3 +39,47 @@ Sample Output 2:
 
 
 */
+
+import java.util.Scanner;
+public class Solution {  
+
+    public static void sortZeroesAndOne(int[] arr) {
+    	   int temp=0;
+
+        for(int i=0; i<arr.length; i++){
+             for(int j=i+1; j<arr.length;j++){
+              if(arr[i]==1){
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+
+              }
+              else if(arr[i]==0){
+                  break;
+              }
+               
+    }
+        }
+        }
+
+
+
+ public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int t = s.nextInt();
+        
+        for (int i = 0; i < t; i++) {
+            int n = s.nextInt();
+            int[] arr = new int[n];
+            for (int j = 0; j < n; j++) {
+                arr[j] = s.nextInt();
+            }
+            int x = s.nextInt();
+
+            sortZeroesAndOne(arr);
+        }
+    }
+
+}
+
+
