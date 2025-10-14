@@ -44,19 +44,17 @@ import java.util.Scanner;
 public class Solution {  
 
     public static void sortZeroesAndOne(int[] arr) {
-    	   int temp=0;
+    	   int zeroIndex=0;
 
         for(int i=0; i<arr.length; i++){
-             for(int j=i+1; j<arr.length;j++){
-              if(arr[i]==1){
-                temp=arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
-
-              }
-              else if(arr[i]==0){
-                  break;
-              }
+             
+              if(arr[i]==0){
+               int temp = arr[i];
+                arr[i] = arr[zeroIndex];
+                arr[zeroIndex] = temp;
+                zeroIndex++;
+              
+              
                
     }
         }
@@ -74,12 +72,11 @@ public class Solution {
             for (int j = 0; j < n; j++) {
                 arr[j] = s.nextInt();
             }
-            int x = s.nextInt();
+        
 
             sortZeroesAndOne(arr);
         }
     }
 
 }
-
 
