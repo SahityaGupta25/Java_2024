@@ -42,6 +42,48 @@ Since, both input arrays have two '2's, the intersection of the arrays also have
 
 */
 
+import java.util.Scanner;
+public class Solution{  
+    
+    public static void intersections(int arr1[], int arr2[]) {
+    	int len1=arr1.length;
+        int len2=arr2.length;
+        for(int i=0; i<len1 ; i++){
+            for(int j=0; j<len2 ; j++)
+                if(arr1[i]==arr2[j]){
+                    System.out.print(arr1[i]+" ");
+                    arr2[j]=-1;
+                    break;
+                }
+        }
+    }
+
+public static void main(String[] args){
+      Scanner s=new Scanner(System.in);
+        int t=s.nextInt();
+        for(int i=0;i<t;i++){
+            int n= s.nextInt();
+            int m=s.nextInt();
+            int[] arr1= new int[n];
+            int[] arr2= new int[m];
+
+            for(int j=0; j<n ;j++){
+                arr1[j] = s.nextInt();
+            }
+            
+            for(int k=0; k<m ;k++){
+                arr2[k] = s.nextInt();
+            }
+            intersections(arr1,arr2);
+
+        }
+}
+
+
+  
+    }
+
+
 
 
 
